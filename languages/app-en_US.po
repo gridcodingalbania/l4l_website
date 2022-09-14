@@ -1,0 +1,407 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Business Magazine Albania\n"
+"POT-Creation-Date: 2020-07-01 00:07+0200\n"
+"PO-Revision-Date: 2020-07-01 00:07+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: sq\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.3\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: node_modules\n"
+"X-Poedit-SearchPathExcluded-1: vendor\n"
+"X-Poedit-SearchPathExcluded-2: languages\n"
+"X-Poedit-SearchPathExcluded-3: resources/js\n"
+"X-Poedit-SearchPathExcluded-4: resources/sass\n"
+"X-Poedit-SearchPathExcluded-5: resources/svg\n"
+"X-Poedit-SearchPathExcluded-6: resources/css\n"
+"X-Poedit-SearchPathExcluded-7: resources/images\n"
+"X-Poedit-SearchPathExcluded-8: build\n"
+
+#: app/Base/Database/PostType.php:106 app/Base/Database/Taxonomy.php:115
+msgid "All items"
+msgstr ""
+
+#: app/Base/Database/PostType.php:107 app/Base/Database/Taxonomy.php:118
+msgid "New item"
+msgstr ""
+
+#: app/Base/Database/PostType.php:108
+msgid "Add New"
+msgstr ""
+
+#: app/Base/Database/PostType.php:109 app/Base/Database/Taxonomy.php:119
+msgid "Add New item"
+msgstr ""
+
+#: app/Base/Database/PostType.php:110 app/Base/Database/Taxonomy.php:120
+msgid "Edit item"
+msgstr ""
+
+#: app/Base/Database/PostType.php:111 app/Base/Database/Taxonomy.php:122
+msgid "View item"
+msgstr ""
+
+#: app/Base/Database/PostType.php:112
+msgid "Search items"
+msgstr ""
+
+#: app/Base/Database/PostType.php:113
+msgid "No item found"
+msgstr ""
+
+#: app/Base/Database/PostType.php:114
+msgid "No item found in trash"
+msgstr ""
+
+#: app/Base/Database/PostType.php:115 app/Base/Database/Taxonomy.php:116
+msgid "Parent item"
+msgstr ""
+
+#: app/Base/Database/Taxonomy.php:117
+msgid "Parent item:"
+msgstr ""
+
+#: app/Base/Database/Taxonomy.php:121
+msgid "Update item"
+msgstr ""
+
+#: app/Base/Database/Taxonomy.php:123
+msgid "Separate items with commas"
+msgstr ""
+
+#: app/Base/Database/Taxonomy.php:124
+#, fuzzy
+#| msgid "Load more items"
+msgid "Add or remove items"
+msgstr "carica altre news"
+
+#: app/Base/Database/Taxonomy.php:125
+msgid "Choose from the most used"
+msgstr ""
+
+#: app/Base/Database/Taxonomy.php:126
+#, fuzzy
+#| msgid "Load more items"
+msgid "Popular items"
+msgstr "carica altre news"
+
+#: app/Base/Database/Taxonomy.php:127
+#, fuzzy
+#| msgid "Search"
+msgid "Search item"
+msgstr "Ricerca"
+
+#: app/Base/Database/Taxonomy.php:128
+msgid "Not Found"
+msgstr ""
+
+#: app/Base/View.php:62
+#, php-format
+msgid "%s does not exist."
+msgstr ""
+
+#: app/Database/PostTypes/Event.php:13
+msgid "Events"
+msgstr "Eventi"
+
+#: app/Database/Taxonomies/ProductCategory.php:14
+#, fuzzy
+#| msgid "Category"
+msgid "Product Category"
+msgstr "Categoria"
+
+#: config/app.php:25 config/app.php:26
+#, fuzzy
+#| msgid "Action"
+msgid "Options"
+msgstr "Azione"
+
+#: config/app.php:35
+msgid "Primary Menu"
+msgstr ""
+
+#: config/app.php:40
+msgid "Sidebar"
+msgstr ""
+
+#: config/app.php:41
+msgid "Default sidebar"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+#. Description of the plugin/theme
+#. Author of the plugin/theme
+msgid "App"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "#"
+msgstr ""
+
+#, fuzzy
+#~| msgid "Location"
+#~ msgid "Action"
+#~ msgstr "Mappa posizione"
+
+#, fuzzy
+#~| msgid "Last Name"
+#~ msgid "Name"
+#~ msgstr "Cognome"
+
+#~ msgid "Email Address"
+#~ msgstr "Adresa Email"
+
+#~ msgid "Status"
+#~ msgstr "Stato"
+
+#, fuzzy
+#~| msgid "Search"
+#~ msgid "Search"
+#~ msgstr "Ricerca"
+
+#, fuzzy
+#~| msgid "Email address"
+#~ msgid "Invalid email address"
+#~ msgstr "indirizzo email"
+
+#, fuzzy
+#~| msgid "Please complete all required fields"
+#~ msgid "Please complete all required fields"
+#~ msgstr "Si prega di compilare tutti i campi obbligatori"
+
+#~ msgid "Email exists"
+#~ msgstr "Ky email ekziston"
+
+#~ msgid "Success"
+#~ msgstr "Regjistrimi u krye me sukses"
+
+#, fuzzy
+#~| msgid "This field is required."
+#~ msgid "This email is already registered."
+#~ msgstr "Questo campo è obbligatorio."
+
+#, fuzzy
+#~| msgid "Please complete all required fields"
+#~ msgid ""
+#~ "Please complete all required fields and make sure your passwords match."
+#~ msgstr "Si prega di compilare tutti i campi obbligatori"
+
+#~ msgid "Info"
+#~ msgstr "Info"
+
+#, fuzzy
+#~| msgid "Email exists"
+#~ msgid "Email address"
+#~ msgstr "Ky email ekziston"
+
+#~ msgid "Password"
+#~ msgstr "Fjalekalimi"
+
+#, fuzzy
+#~| msgid "Sign In"
+#~ msgid "Sign Up"
+#~ msgstr "Accedi"
+
+#~ msgid "First Name"
+#~ msgstr "Nome"
+
+#~ msgid "Last Name"
+#~ msgstr "Cognome"
+
+#~ msgid "Password confirm"
+#~ msgstr "Konfirmo fjalekalimin"
+
+#~ msgid "Subscribe"
+#~ msgstr "invio"
+
+#, fuzzy
+#~| msgid "Load more items"
+#~ msgid "Popular posts"
+#~ msgstr "carica altre news"
+
+#, fuzzy
+#~| msgid "First Name"
+#~ msgid "Project Name"
+#~ msgstr "Nome"
+
+#, fuzzy
+#~| msgid "Your file has been deleted."
+#~ msgid "Your profile has been saved successfully"
+#~ msgstr "Il tuo file è stato cancellato"
+
+#~ msgid "Tell us about your project"
+#~ msgstr "Parlaci del tuo progetto"
+
+#~ msgid "Send"
+#~ msgstr "Inviare"
+
+#, fuzzy
+#~| msgid "Company Profile"
+#~ msgid "My Profile"
+#~ msgstr "Azienda"
+
+#, fuzzy
+#~| msgid "Company Profile"
+#~ msgid "Company function"
+#~ msgstr "Azienda"
+
+#~ msgid "Save"
+#~ msgstr "Salva"
+
+#~ msgid "Username/Email"
+#~ msgstr "Email"
+
+#~ msgid "Don't have an account ?"
+#~ msgstr "Non hai un account?"
+
+#, fuzzy
+#~| msgid "I accept the privacy conditions"
+#~ msgid "I accept the Privacy Policy"
+#~ msgstr "accetto le condizioni privacy"
+
+#~ msgid "Sign in"
+#~ msgstr "Accedi"
+
+#~ msgid "The post has been saved"
+#~ msgstr "Il post è stato salvato"
+
+#~ msgid "New post"
+#~ msgstr "Nuovo post"
+
+#~ msgid "Orders"
+#~ msgstr "Ordini"
+
+#~ msgid "Reservations"
+#~ msgstr "Prenotazioni"
+
+#~ msgid "Subscriptions"
+#~ msgstr "Abbonamenti"
+
+#~ msgid "My account"
+#~ msgstr "Il mio account"
+
+#~ msgid "Contacts"
+#~ msgstr "Contatti"
+
+#~ msgid "Services"
+#~ msgstr "Servizi"
+
+#~ msgid "Opening Hours"
+#~ msgstr "Orari di apertura"
+
+#~ msgid "Portfolio"
+#~ msgstr "Il mio portfolio"
+
+#~ msgid "Social Wall"
+#~ msgstr "Social Wall"
+
+#~ msgid "The changes have been saved."
+#~ msgstr "Le modifiche sono state salvate"
+
+#~ msgid "All"
+#~ msgstr "Tutti"
+
+#~ msgid "Reservation"
+#~ msgstr "Prenotazione"
+
+#, fuzzy
+#~| msgid "Reservations"
+#~ msgid "Reservation successful"
+#~ msgstr "Prenotazioni"
+
+#~ msgid "Notice Board"
+#~ msgstr "Bacheca"
+
+#~ msgid "No"
+#~ msgstr "No"
+
+#~ msgid "Yes"
+#~ msgstr "Si"
+
+#~ msgid "Deleted!"
+#~ msgstr "Cancellato!"
+
+#~ msgid "Cancelled!"
+#~ msgstr "Annullato!"
+
+#~ msgid "Are you sure ?"
+#~ msgstr "Sei sicuro ?"
+
+#~ msgid "Your file is safe"
+#~ msgstr "Il tuo file è sicuro"
+
+#~ msgid "You will not be able to recover this file!"
+#~ msgstr "Non sarai in grado di recuperare questo file!"
+
+#~ msgid "Post title"
+#~ msgstr "Titolo del post"
+
+#~ msgid "Post date"
+#~ msgstr "Data di pubblicazione"
+
+#~ msgid "Edit"
+#~ msgstr "Modificare"
+
+#~ msgid "Delete"
+#~ msgstr "Elimina"
+
+#~ msgid "Title"
+#~ msgstr "Titolo"
+
+#~ msgid "Content"
+#~ msgstr "Il contenuto"
+
+#~ msgid "Statistics"
+#~ msgstr "Statistica"
+
+#~ msgid "Post to"
+#~ msgstr "Postare su"
+
+#~ msgid "View profile"
+#~ msgstr "Vedi profilo"
+
+#, fuzzy
+#~| msgid "Services"
+#~ msgid "Service"
+#~ msgstr "Servizi"
+
+#, fuzzy
+#~| msgid "Reservations"
+#~ msgid "Reservation Date"
+#~ msgstr "Prenotazioni"
+
+#~ msgid "Subscribe to newsletter"
+#~ msgstr "ricevi le nostro offerte"
+
+#~ msgid "Book"
+#~ msgstr "Prenota"
+
+#~ msgid "My portfolio"
+#~ msgstr ""
+#~ "/ la mia bacheca\n"
+#~ "dei lavori"
+
+#~ msgid "Reserve now"
+#~ msgstr "Prenota ora"
+
+#~ msgid "Note"
+#~ msgstr "Nota"
+
+#~ msgid "My social wall"
+#~ msgstr "il mio social wall /"
+
+#~ msgid "Page views"
+#~ msgstr "Visualizzazioni di pagina"
