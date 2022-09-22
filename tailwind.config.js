@@ -27,14 +27,19 @@ module.exports = {
         DEFAULT: "1.25rem",
       },
     },
+    letterSpacing: {
+      '1p': '1px'
+    },
     colors: {
       transparent: "transparent",
       current: "currentColor",
 
       black: "#000",
       white: "#fff",
-      page:'#E3E9ED',
-      flamingo:'#E84246',
+      page: '#E3E9ED',
+      flamingo: '#E84246',
+      label: 'rgba(51, 47, 48, 0.6)',
+      input: '#040704',
       gray: {
         100: "#f7fafc",
         200: "#edf2f7",
@@ -185,10 +190,10 @@ module.exports = {
         },
       },
       maxHeight: {
-       
+
       },
       maxWidth: {
-       
+
       },
       boxShadow: {
 
@@ -203,6 +208,7 @@ module.exports = {
         "5/11": "45%",
         "6/11": "55%",
         "7/11": "48%",
+        "50": "50%",
       },
       height: {
         "11/12": "91.666667%",
@@ -213,7 +219,7 @@ module.exports = {
     }
   },
   variants: {
-   
+
   },
 
   plugins: [
