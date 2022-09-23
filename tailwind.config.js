@@ -27,14 +27,24 @@ module.exports = {
         DEFAULT: "1.25rem",
       },
     },
+    screens: {
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1536px',
+    },
     colors: {
       transparent: "transparent",
       current: "currentColor",
 
       black: "#000",
-      white: "#fff",
-
+      white: "#FFFFFF",
+      navbar:{
+        100:'#243c5a',
+      }, 
       gray: {
+        darkest:'#101010',
         100: "#f7fafc",
         200: "#edf2f7",
         300: "#e2e8f0",
@@ -42,8 +52,8 @@ module.exports = {
         500: "#a0aec0",
         600: "#718096",
         700: "#4a5568",
-        800: "#2d3748",
-        900: "#1a202c",
+        800: "#332F30F7",
+        900: "#C4C4C4",
       },
       red: {
         100: "#fff5f5",
@@ -51,7 +61,7 @@ module.exports = {
         300: "#feb2b2",
         400: "#fc8181",
         500: "#f56565",
-        600: "#e53e3e",
+        600: "#E84246",
         700: "#c53030",
         800: "#9b2c2c",
         900: "#742a2a",
