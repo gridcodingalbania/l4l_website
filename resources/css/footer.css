@@ -1,0 +1,27 @@
+footer{
+    font-family: Arimo;
+}
+#th{
+    line-height: 21px;
+    font-weight: 400;
+    color: #707070;
+}
+.footer-element{
+    padding-left: 22.57%;
+    padding-right: 22.5%;
+}
+
+@media only screen and (max-width: 700px){
+    .footer-element{
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-bottom: 5%;
+        padding-top: 21px;
+        width: auto;
+    }
+}
+@media only screen and (max-width: 380px){
+    .footer-element{ 
+        width: fit-content;
+    }
+}

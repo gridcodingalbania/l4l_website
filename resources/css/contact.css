@@ -1,0 +1,104 @@
+/* CSS FOR CONTACT.PHP PAGE */
+.main-text-contact{
+    font-family: 'DM Serif Display';
+}
+.underline-form {
+    border-bottom:  1px solid #C4C4C4;
+    width: 624px;
+}
+.box-border-form{
+    width: 624px;
+    border: 1px solid #C4C4C4;
+    height: 216px;
+    box-sizing: border-box;
+}
+label{
+    color: #707070;
+    font-family: 'Arimo';
+    font-size: 16px;
+    line-height: 16px;
+}
+input{
+    color: #707070;
+    font-family: 'Arimo';
+    font-size: 16px;
+    line-height: 16px;
+   
+}
+input[type=text] {
+     padding: 10px;    border-bottom: 1px solid #C4C4C4;
+  }
+.button-form-contact{
+    font-family: Arimo;
+    line-height: 16px;
+}
+textarea{
+    color: #707070;
+    font-family: 'Arimo';
+    font-size: 16px;
+
+}
+.bg-contact{
+    background: white;
+}
+.captcha{
+    display: none;
+}
+.modal {
+    transition: opacity 0.25s ease;
+  }
+  body.modal-active {
+    overflow-x: hidden;
+    overflow-y: visible !important;
+}
+.modal-main-text{
+    font-family: 'DM Serif Display';
+}
+#main-text-con{
+    display: none;
+}
+@media only screen and (max-width: 767px){
+    .modal-content{
+        width: 325px;
+    }
+}
+@media only screen and (max-width: 700px){
+    .underline-form {
+        width: 300px;
+    }
+    .box-border-form{
+        width: 300px;
+    }
+    .bg-contact{
+        background: #E3E9ED;
+        width: 100%;
+    }
+    input{
+        background-color: #E3E9ED;
+    }
+    textarea{
+        background-color: #E3E9ED;
+    }
+    #main-text-c{
+         display: none;
+    }
+    #main-text-con{
+        display: block;
+    }
+    .captcha{
+        display: block;
+    }
+}
+@media only screen and (max-width: 380px){
+    .underline-form {
+        width: 210px;
+    }
+    .box-border-form {
+        width: 210px;
+    }
+    .bg-contact {
+        padding-left: 20%;
+        padding-right: 20%;
+        width: fit-content;
+    }
+}
