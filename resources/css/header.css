@@ -1,0 +1,75 @@
+
+header{
+    background-color: #101010;
+}
+#menu{
+    background-color: #101010 !important;
+}
+.menu-items a{
+    font-family: 'DM Serif Display';
+    font-weight: 400;
+    color: #FFFFFF;
+    opacity: unset;
+}
+
+
+
+.mega-menu {
+    display: none;
+    left: 0;
+    position: absolute;
+    text-align: left;
+    width: 100%;
+    background-color: #332F30F7;
+  }
+
+  /* #toggle Class Styles
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+  .toggleable > label:after {
+    content: "\25BC";
+    font-size: 10px;
+    padding-left: 6px;
+    position: relative;
+    top: -1px;
+  }
+
+  .toggle-input {
+    display: none;
+  }
+  .toggle-input:not(checked) ~ .mega-menu {
+    display: none;
+  }
+
+  .toggle-input:checked ~ .mega-menu {
+    display: block;
+  }
+
+  .toggle-input:checked + label {
+    color: white;
+    background: #2c5282; /*@apply bg-blue-800 */
+  }
+
+  .toggle-input:checked ~ label:after {
+    content: "\25B2";
+    font-size: 10px;
+    padding-left: 6px;
+    position: relative;
+    top: -1px;
+  }
+  .mobile-header{
+    display: none;
+  }
+  @media (max-width: 767px) {
+    .desktop-header{
+        display: none;
+    }
+    .mobile-header{
+        display: block;
+    }
+  }
+
+  /* home */
+  .home{
+    background-color: #F5EBEB;
+  }
