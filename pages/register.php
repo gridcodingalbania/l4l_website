@@ -3,4 +3,8 @@
  * Template Name: Register
  */
 ?>
-<?php view('login.register'); ?>
+<?php get_header(); ?>
+<?php while (have_posts()) : the_post(); ?>
+    <?php view('login.register'); ?>
+<?php endwhile; ?>
+<?php get_footer(); ?>
