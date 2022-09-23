@@ -1,0 +1,27 @@
+
+.discovery-bg{
+    background:#1E1E1E;
+}
+.main-text-discovery{
+    color: #E84246;
+    font-family: 'DM Serif Display';
+    line-height:60px;
+}
+.text-main-img{
+    font-family: Arimo;
+}
+.img-desktop{
+    display: block;
+}
+.img-mobile{
+    display: none;
+}
+@media only screen and (max-width: 640px){
+    .img-desktop{
+        display: none;
+    }
+    .img-mobile{
+        display: block;
+    }
+}
+    
