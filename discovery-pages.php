@@ -120,7 +120,9 @@
             <div class="w-[70%]">
                 <div>
                     <p>Usa filtri Beauty Wallet</p>
+                    <button></button>
                 </div>
+                
             </div>
         </div>
 
