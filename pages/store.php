@@ -30,7 +30,7 @@
                                     <a>Wishlist</a>
                                     <a>Add to cart</a>
                                 </div> -->
-                            </div>
+                            </div> 
                             
                         </div>
                     </a>
