@@ -31,6 +31,7 @@
                                     <a>Add to cart</a>
                                 </div> -->
                             </div>
+                            
                         </div>
                     </a>
                 <?php endforeach; ?>
@@ -60,18 +61,24 @@
 <!-- Banner Section -->
 <div class="second-section bg-white px-10 py-20">
         <div>
-            <h1 class="text-[48px] " style="color:#E84246;">Banner 1</h1>
+            <h1 class="text-[48px] pb-10 " style="color:#E84246;">Banner 1</h1>
         </div>
         <!-- Images Section -->
-        <div class="w-full flex flex-row mb-3 space-x-8">
-            <div class="w-1/3 bg-black h-[50px]">
-                
+        <div class="w-full flex flex-row mb-3 space-x-10">
+            <div class="w-1/3">
+                <div class="h-[345px]" style="background-color:#F8BDB1;"></div>
+                <h2 class="text-[20px] py-5 font-bold w-[60%]">Lorem ipsum dolor</h2>
+                <p class="w-[80%]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra lectus facilisi ut nec sit tincidunt et, penatibus.</p>
             </div>
-            <div class="w-1/3 bg-black h-[50px]">
-
+            <div class="w-1/3">
+                <div class="h-[345px]" style="background-color:#F8BDB1;"></div>
+                <h2 class="text-[20px] py-5 font-bold w-[60%]">Lorem ipsum dolor</h2>
+                <p class="w-[80%]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra lectus facilisi ut nec sit tincidunt et, penatibus.</p>
             </div>
-            <div class="w-1/3 bg-black h-[50px]">
-
+            <div class="w-1/3">
+                <div class="h-[345px]" style="background-color:#F8BDB1;"></div>
+                <h2 class="text-[20px] py-5 font-bold w-[60%]">Lorem ipsum dolor</h2>
+                <p class="w-[80%]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra lectus facilisi ut nec sit tincidunt et, penatibus.</p>
             </div>
         </div>
 </div>
@@ -81,7 +88,7 @@
             <h1 class="text-[48px] " style="color:#E84246;">Banner 4</h1>
         </div>
         <div class="w-full h-full text-center">
-            <p class="m-auto text-white text-[30px]">Enviroment</p>
+            <p class="m-auto text-white text-[30px] pt-[150px]">Enviroment</p>
         </div>
 </div>
 <!-- Accessories Section -->
@@ -102,7 +109,7 @@
             <p class="text-center text-[28px]" style="color:#707070;">key message</p>
             <div class="buttons-section pt-[150px]">
                 <!-- View More Button -->
-                <button class="bg-transparent text-black font-semibold  py-2 px-4 border border-black rounded text-center">
+                <button class="bg-transparent w-48 text-black font-semibold  py-2 px-4 border border-black rounded text-center">
                     View More
                 </button>
                 <!-- Download Button -->
