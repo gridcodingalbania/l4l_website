@@ -327,7 +327,7 @@
 
 <!-- Mobile Nav -->
 <header class="mobile-header">
-<div class="container  px-4 py-2 md:px-0 h-full mx-auto flex justify-between items-center">
+<div class="container  px-4 py-2 md:px-0 mx-auto flex justify-between items-center">
 
             <!-- This is used to open the menu on mobile devices -->
             <div class="flex items-center md:hidden">

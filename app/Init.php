@@ -16,6 +16,7 @@ use App\Base\Bootstrap\RegisterAjaxHooks;
 
 use App\Hooks\WoocommerceHooks;
 use App\Hooks\RegisterHooks;
+use App\Hooks\AdminHooks;
 
 class Init extends Singleton
 {
@@ -32,5 +33,6 @@ class Init extends Singleton
 
         WoocommerceHooks::init();
         RegisterHooks::init();
+        AdminHooks::init();
     }
 }

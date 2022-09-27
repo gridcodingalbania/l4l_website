@@ -1,8 +1,8 @@
 
 import {
-    Test
+    RegisterForm
 } from './modules'
 
 (function(){
-    new Test
+    new RegisterForm
 })();

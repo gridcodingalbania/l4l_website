@@ -1,6 +1,7 @@
 
 .discovery-bg{
     background:#1E1E1E;
+    width: fit-content;
 }
 .main-text-discovery{
     color: #E84246;
@@ -15,6 +16,20 @@
 }
 .img-mobile{
     display: none;
+}
+.mobile-metallic{
+    display: none;
+}
+.desktop-metallic{
+    display: block;
+}
+@media only screen and (max-width: 800px){
+    .desktop-metallic{
+        display: none;
+    }
+    .mobile-metallic{
+        display: block;
+    }
 }
 @media only screen and (max-width: 640px){
     .img-desktop{
