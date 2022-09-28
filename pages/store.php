@@ -101,25 +101,37 @@
             'category' => array( 'Accessories' ),
         );
         $accessories = wc_get_products( $args ); ?>
-        <?php if($accessories) : ?>
-            <div class="flex lg:mb-4 flex-wrap md:mb-2 sm:mb-2  items-center">
-                <?php foreach($accessories as $accessor) : ?>
-                    <?php $product = App\Model\Product::toCard($accessor->get_id()); ?>
-                    <a class=" lg:w-1/4 md:w-1/2 sm:w-1/2 content-center"  href="<?php echo $product['link']; ?>">
-                        <div >
+        <div class="relative w-[600px] mx-auto">
+            <?php if($accessories) : ?>
+                <div class="flex lg:mb-4 flex-wrap md:mb-2 sm:mb-2  items-center">
+                    <?php foreach($accessories as $accessor) : ?>
+                        <?php $product = App\Model\Product::toCard($accessor->get_id()); ?>
+                        <div class="slide w-full">
                             <img  class="m-auto" src="<?php echo $product['image']; ?>">
                             <div class="px-6 py-4 text-center">
-                                <div class="font-bold text-white text-20 mb-2"><?php echo $product['name']; ?></div>
-                                <p class="text-white text-base px-10">
-                                    <?php echo $product['short_description']; ?>
-                                </p>
+                                    <div class="font-bold text-black text-20 mb-2"><?php echo $product['name']; ?></div>
+                                    <p class="text-black text-base px-10">
+                                        <?php echo $product['short_description']; ?>
+                                    </p>
                             </div> 
-                            
                         </div>
+
+                    <?php endforeach; ?>
+                    <!-- The previous button -->
+                    <a class="absolute left-0 top-1/2 p-4 -translate-y-1/2 cursor-pointer"
+                        onclick="moveSlide(-1)">
+                        <img src="<?php echo get_image('leftarrow.svg');?>">
                     </a>
-                <?php endforeach; ?>
-            </div>
-        <?php endif; ?>
+
+                    <!-- The next button -->
+                    <a class="absolute right-0 top-1/2 p-4 -translate-y-1/2 cursor-pointer"
+                        onclick="moveSlide(1)">
+                        <img src="<?php echo get_image('rightarrow.svg');?>">
+                    </a>
+
+                </div>
+            <?php endif; ?>
+        </div>
     </div>
 </div>
 <!-- RoarID Section -->
@@ -153,3 +165,30 @@
     </div>
 </div>
 <?php get_footer(); ?>
+<script>
+        // set the default active slide to the first one
+        let slideIndex = 1;
+        showSlide(slideIndex);
+
+        // change slide with the prev/next button
+        function moveSlide(moveStep) {
+            showSlide(slideIndex += moveStep);
+        }
+
+        function showSlide(n) {
+            let i;
+            const slides = document.getElementsByClassName("slide");
+            const dots = document.getElementsByClassName('dot');
+            
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+
+            // hide all slides
+            for (i = 0; i < slides.length; i++) {
+                slides[i].classList.add('hidden');
+            }
+
+            // show the active slide
+            slides[slideIndex - 1].classList.remove('hidden');
+        }
+</script>
