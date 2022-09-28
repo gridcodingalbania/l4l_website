@@ -96,6 +96,30 @@
     <div class="text-section w-full">
         <h1 class="text-[48px]" style="color:#9C9883;">Accessories</h1>
         <h2 class="text-[28px]" style="color:#707070;">Accessories Overview</h2>
+        <?php 
+        $args = array(
+            'category' => array( 'Accessories' ),
+        );
+        $accessories = wc_get_products( $args ); ?>
+        <?php if($accessories) : ?>
+            <div class="flex lg:mb-4 flex-wrap md:mb-2 sm:mb-2  items-center">
+                <?php foreach($accessories as $accessor) : ?>
+                    <?php $product = App\Model\Product::toCard($accessor->get_id()); ?>
+                    <a class=" lg:w-1/4 md:w-1/2 sm:w-1/2 content-center"  href="<?php echo $product['link']; ?>">
+                        <div >
+                            <img  class="m-auto" src="<?php echo $product['image']; ?>">
+                            <div class="px-6 py-4 text-center">
+                                <div class="font-bold text-white text-20 mb-2"><?php echo $product['name']; ?></div>
+                                <p class="text-white text-base px-10">
+                                    <?php echo $product['short_description']; ?>
+                                </p>
+                            </div> 
+                            
+                        </div>
+                    </a>
+                <?php endforeach; ?>
+            </div>
+        <?php endif; ?>
     </div>
 </div>
 <!-- RoarID Section -->
