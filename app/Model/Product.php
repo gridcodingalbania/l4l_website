@@ -19,7 +19,8 @@ class Product extends Singleton
             'short_description' =>$product->get_short_description(),
             'description' =>$product->get_description(),
             'category_ids' =>$product->get_category_ids(),
-            'category_names' => self::getCategoryNames($product_id)
+            'category_names' => self::getCategoryNames($product_id),
+            'add_to_cart_url' => $product->add_to_cart_url(),
         ];
     }
 
