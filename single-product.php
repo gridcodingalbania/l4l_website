@@ -8,21 +8,23 @@
 				<div class="w-1/4">
 					<h1 class="text-[48px]"><?php echo $product['name']; ?></h1>
 					<h2 class="text-[64px]" style="color:#9C9883;">Blue Are You</h2>
-					<p class="text-[18px]">SH210w • Effetto Metallic — Iridescent</p>
-					<p class="text-[18px]">6.3 ml • 0.213 fl.oz. ℮</p>
+					<p class="text-[18px] pt-16">SH210w • Effetto Metallic — Iridescent</p>
+					<p class="text-[18px] pb-2">6.3 ml • 0.213 fl.oz. ℮</p>
 				</div>
 				<!-- Buttons Section -->
 				<div class="w-2/4 space-x-32">
-					<button class="bg-white text-black font-semibold  py-2 px-8 border rounded">
-						<a href="<?php echo $product['add_to_cart_url']; ?>">
-							ADD TO WISHLIST
-						</a>
-            		</button>
-					<button class="bg-black text-white font-semibold  py-2 px-8 border rounded">
-						<a href="<?php echo $product['add_to_cart_url']; ?>">
-							AGGIUNGI AL CARRELLO
-						</a>
-            		</button>
+					<div >
+						<button class="bg-white text-black font-semibold  py-2 px-8 border rounded">
+							<a href="<?php echo $product['add_to_cart_url']; ?>">
+								ADD TO WISHLIST
+							</a>
+						</button>
+						<button class="bg-black text-white font-semibold  py-2 px-8 border rounded">
+							<a href="<?php echo $product['add_to_cart_url']; ?>">
+								AGGIUNGI AL CARRELLO
+							</a>
+						</button>
+					</div>
 				</div>
 				<!-- Price Section -->
 				<div class="w-1/4">
@@ -41,14 +43,16 @@
 						<p class="py-4  w-[60%] m-auto"><span class="font-bold">Arricchito con estratto di</span> Himanthalia Elongata (alga marina)</p>
 					</div>
 				</div>
-				<div class="w-2/3">
+				<!-- <div class="w-2/3">
 					aaaa
+				</div> -->
+				<div class="gallery flex flex-wra p hidden  ">
+            		<?php view('single-product.gallery', ['gallery' => $product['gallery']]); ?>
 				</div>
 
 
 			</div>
 			
-            <?php view('single-product.gallery', ['gallery' => $product['gallery']]); ?>
         </div>
     <?php endwhile; ?>
 <?php get_footer(); ?>
