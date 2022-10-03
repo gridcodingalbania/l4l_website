@@ -43,8 +43,7 @@ module.exports = {
       page: '#E3E9ED',
       flamingo: '#E84246',
       label: 'rgba(51, 47, 48, 0.6)',
-      input: '#040704',
-      white: "#FFFFFF",
+      input: '#040704 !important',
       navbar:{
         100:'#243c5a',
       }, 
