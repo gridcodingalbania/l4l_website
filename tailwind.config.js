@@ -28,6 +28,7 @@ module.exports = {
       },
     },
     screens: {
+      'xs': {'min': '300px', 'max': '600px'},
       'sm': '640px',
       'md': '768px',
       'lg': '1024px',
@@ -44,11 +45,11 @@ module.exports = {
       flamingo: '#E84246',
       label: 'rgba(51, 47, 48, 0.6)',
       input: '#040704 !important',
-      navbar:{
-        100:'#243c5a',
-      }, 
+      navbar: {
+        100: '#243c5a',
+      },
       gray: {
-        darkest:'#101010',
+        darkest: '#101010',
         100: "#f7fafc",
         200: "#edf2f7",
         300: "#e2e8f0",
