@@ -15,7 +15,7 @@
             </div>
             <div class="text-center md:w-50">
                 <input type="button" class="family-Arimo mt-8 bg-input text-white h-[46px] font-bold tracking-1p w-[204px] rounded-md cursor-pointer uppercase" value="Log in" />
-                <p class="family-Arimo mt-5 text-md">Ancora non sei in lista? <a href="#" class="text-flamingo border-b-2 border-[red]">On board</a></p>
+                <p class="family-Arimo mt-5 text-md">Ancora non sei in lista? <a href="<?php echo site_url('/register'); ?>" class="text-flamingo border-b-2 border-[red]">On board</a></p>
             </div>
         </div>
     </div>
