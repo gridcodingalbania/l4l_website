@@ -28,7 +28,6 @@ module.exports = {
       },
     },
     screens: {
-      'xs': {'min': '300px', 'max': '600px'},
       'sm': '640px',
       'md': '768px',
       'lg': '1024px',
@@ -180,7 +179,7 @@ module.exports = {
     },
     extend: {
       screens: {
-        xs: { max: "375px" },
+        'xs': {'min': '300px', 'max': '600px'},
         "2xl": "1300px",
         print: { raw: "print" },
       },
