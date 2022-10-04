@@ -43,16 +43,63 @@
 						<p class="py-4  w-[60%] m-auto"><span class="font-bold">Arricchito con estratto di</span> Himanthalia Elongata (alga marina)</p>
 					</div>
 				</div>
-				<!-- <div class="w-2/3">
-					aaaa
-				</div> -->
+				<!-- Gallery&Custom Fields -->
+				<div class="w-2/3">
+					<!-- Custom Fields -->
+					<div class="px-20">
+						<!-- Descrizione Colore -->
+						<div class="py-4 border-b-2 border-black">
+							<?php
+								$field = get_field_object('descrizione_colore');
+							?>
+							<button class="flex flex-row items-center w-full" onclick="toggleField(1)">
+								<h1 class="text-bold"><?php echo $field['label']; ?></h1>
+								<div>
+									<img id="shigjeta1" src="<?php echo get_image('shigjeta.svg');?>">
+								</div>
+								
+							</button>
+							<div id="toggle-field1" style="display:none;">
+								<p class="py-2"><?php echo $field['value']; ?></p>
+							</div>
+						</div>
+						<!-- Consigli d'uso-->
+						<div class="py-4 border-b-2 border-black">
+							<?php
+								$field = get_field_object('consigli_duso');
+							?>
+							<button class="flex flex-row items-center" onclick="toggleField(2)">
+								<h1 class="text-bold"><?php echo $field['label']; ?></h1>
+								<div>
+									<img id="shigjeta2" src="<?php echo get_image('shigjeta.svg');?>">
+								</div>
+								
+							</button>
+							<div id="toggle-field2" style="display:none;">
+								<p class="py-2"><?php echo $field['value']; ?></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Gallery -->
 				<div class="gallery flex flex-wra p hidden  ">
             		<?php view('single-product.gallery', ['gallery' => $product['gallery']]); ?>
 				</div>
-
-
 			</div>
 			
         </div>
     <?php endwhile; ?>
 <?php get_footer(); ?>
+<script>
+	function toggleField(num) {
+            var text = document.getElementById("toggle-field" + num);
+			var shigjeta = document.getElementById("shigjeta"+num);
+            if (text.style.display === "none") {
+                text.style.display = "block";
+                shigjeta.style.display = "none";
+            } else {
+                text.style.display = "none";
+                shigjeta.style.display = "block";
+            }
+}
+</script>
