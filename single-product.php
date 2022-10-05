@@ -5,15 +5,15 @@
 			<!-- Name&Buttons&Price Section -->
 			<div class="w-full flex ">
 				<!-- Name Section -->
-				<div class="w-1/4">
+				<div class="w-2/4">
 					<h1 class="text-[48px]"><?php echo $product['name']; ?></h1>
 					<h2 class="text-[64px]" style="color:#9C9883;">Blue Are You</h2>
-					<p class="text-[18px] pt-16">SH210w • Effetto Metallic — Iridescent</p>
+					<p class="text-[18px] pt-16"><span class="font-bold">SH210w •</span> Effetto Metallic — Iridescent</p>
 					<p class="text-[18px] pb-2">6.3 ml • 0.213 fl.oz. ℮</p>
 				</div>
 				<!-- Buttons Section -->
-				<div class="w-2/4 space-x-32">
-					<div >
+				<div class="w-2/4 space-x-32 relative">
+					<div class="absolute bottom-0" >
 						<button class="bg-white text-black font-semibold  py-2 px-8 border rounded">
 							<a href="<?php echo $product['add_to_cart_url']; ?>">
 								ADD TO WISHLIST
@@ -28,7 +28,7 @@
 				</div>
 				<!-- Price Section -->
 				<div class="w-1/4">
-					<h1 class="text-[24px]">45$<?php echo $product['price']; ?></h1>
+					<h1 class="text-[24px]"><?php echo $product['price']; ?></h1>
 				</div>		
 			</div>
 			<!-- Product Image Section -->
@@ -39,8 +39,8 @@
 					</div>
 					
 					<div class="pb-10  border-b-2">
-						<p class="py-4 w-[60%] m-auto"><span class="font-bold">Makeup Agile Multi-Funzionale</span> Rossetto • Blush • Illuminante • Contour Ombretto • Eyeliner • Sopracciglia</p>
-						<p class="py-4  w-[60%] m-auto"><span class="font-bold">Arricchito con estratto di</span> Himanthalia Elongata (alga marina)</p>
+						<p class="py-4 text-[14px] w-[60%] m-auto"><span class="font-bold">Makeup Agile Multi-Funzionale</span> Rossetto • Blush • Illuminante • Contour Ombretto • Eyeliner • Sopracciglia</p>
+						<p class="py-2 text-[14px]  w-[60%] m-auto"><span class="font-bold">Arricchito con estratto di</span> Himanthalia Elongata (alga marina)</p>
 					</div>
 				</div>
 				<!-- Gallery&Custom Fields -->
@@ -52,7 +52,7 @@
 							<?php
 								$field = get_field_object('descrizione_colore');
 							?>
-							<button class="flex flex-row items-center w-full" onclick="toggleField(1)">
+							<button class="flex flex-row items-center w-full justify-between" onclick="toggleField(1)">
 								<h1 class="text-bold"><?php echo $field['label']; ?></h1>
 								<div>
 									<img id="shigjeta1" src="<?php echo get_image('shigjeta.svg');?>">
@@ -63,12 +63,12 @@
 								<p class="py-2"><?php echo $field['value']; ?></p>
 							</div>
 						</div>
-						<!-- Consigli d'uso-->
+						<!-- Descrizione prodotto -->
 						<div class="py-4 border-b-2 border-black">
 							<?php
-								$field = get_field_object('consigli_duso');
+								$field = get_field_object('descrizione_prodotto');
 							?>
-							<button class="flex flex-row items-center" onclick="toggleField(2)">
+							<button class="flex flex-row items-center w-full justify-between" onclick="toggleField(2)">
 								<h1 class="text-bold"><?php echo $field['label']; ?></h1>
 								<div>
 									<img id="shigjeta2" src="<?php echo get_image('shigjeta.svg');?>">
@@ -76,6 +76,54 @@
 								
 							</button>
 							<div id="toggle-field2" style="display:none;">
+								<p class="py-2"><?php echo $field['value']; ?></p>
+							</div>
+						</div>
+						<!-- Principi attivi e Tecnologia -->
+						<div class="py-4 border-b-2 border-black">
+							<?php
+								$field = get_field_object('principi_attivi_e_tecnologia');
+							?>
+							<button class="flex flex-row items-center w-full justify-between" onclick="toggleField(3)">
+								<h1 class="text-bold"><?php echo $field['label']; ?></h1>
+								<div>
+									<img id="shigjeta3" src="<?php echo get_image('shigjeta.svg');?>">
+								</div>
+								
+							</button>
+							<div id="toggle-field3" style="display:none;">
+								<p class="py-2"><?php echo $field['value']; ?></p>
+							</div>
+						</div>
+						<!-- Consigli d'uso-->
+						<div class="py-4 border-b-2 border-black">
+							<?php
+								$field = get_field_object('consigli_duso');
+							?>
+							<button class="flex flex-row items-center w-full justify-between" onclick="toggleField(4)">
+								<h1 class="text-bold"><?php echo $field['label']; ?></h1>
+								<div>
+									<img id="shigjeta4" src="<?php echo get_image('shigjeta.svg');?>">
+								</div>
+								
+							</button>
+							<div id="toggle-field4" style="display:none;">
+								<p class="py-2"><?php echo $field['value']; ?></p>
+							</div>
+						</div>
+						<!-- Inci-->
+						<div class="py-4 border-b-2 border-black">
+							<?php
+								$field = get_field_object('inci');
+							?>
+							<button class="flex flex-row items-center w-full justify-between" onclick="toggleField(5)">
+								<h1 class="text-bold"><?php echo $field['label']; ?></h1>
+								<div>
+									<img id="shigjeta5" src="<?php echo get_image('shigjeta.svg');?>">
+								</div>
+								
+							</button>
+							<div id="toggle-field5" style="display:none;">
 								<p class="py-2"><?php echo $field['value']; ?></p>
 							</div>
 						</div>
