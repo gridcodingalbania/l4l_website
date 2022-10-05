@@ -40,17 +40,21 @@ module.exports = {
       current: "currentColor",
 
       black: "#000",
-      white: "#FFFFFF",
-      navbar:{
-        100:'#243c5a',
-      }, 
+      white: "#fff",
+      page: '#E3E9ED',
+      flamingo: '#E84246',
+      label: 'rgba(51, 47, 48, 0.6)',
+      input: '#040704 !important',
+      navbar: {
+        100: '#243c5a',
+      },
       gray: {
-        darkest:'#101010',
+        darkest: '#101010',
         100: "#f7fafc",
         200: "#edf2f7",
         300: "#e2e8f0",
         400: "#cbd5e0",
-        500: "#a0aec0",
+        500: "#101010",
         600: "#718096",
         700: "#4a5568",
         800: "#332F30F7",
@@ -148,7 +152,7 @@ module.exports = {
         100: "#fff5f7",
         200: "#fed7e2",
         300: "#fbb6ce",
-        400: "#f687b3",
+        400: "#F8BDB1",
         500: "#ed64a6",
         600: "#d53f8c",
         700: "#b83280",
@@ -176,7 +180,7 @@ module.exports = {
     },
     extend: {
       screens: {
-        xs: { max: "375px" },
+        'xs': {'min': '300px', 'max': '600px'},
         "2xl": "1300px",
         print: { raw: "print" },
       },
@@ -195,10 +199,10 @@ module.exports = {
         },
       },
       maxHeight: {
-       
+
       },
       maxWidth: {
-       
+
       },
       boxShadow: {
 
@@ -213,6 +217,7 @@ module.exports = {
         "5/11": "45%",
         "6/11": "55%",
         "7/11": "48%",
+        "50": "50%",
       },
       height: {
         "11/12": "91.666667%",
@@ -223,7 +228,7 @@ module.exports = {
     }
   },
   variants: {
-   
+
   },
 
   plugins: [

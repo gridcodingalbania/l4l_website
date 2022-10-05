@@ -1,0 +1,33 @@
+#haircolors input[type=radio] {
+    display: none;
+}
+
+#haircolors input[type=radio]:checked {
+    display: unset;
+}
+
+
+
+.lattea {
+    background-color: #FFFFFE;
+}
+
+.molto-chiara {
+    background-color: #E2BC99;
+}
+
+.mediamente {
+    background-color: #F0C799;
+}
+
+.leggermente {
+    background-color: #DFB68B;
+}
+
+.scura-mulatta {
+    background-color: #D7956B;
+}
+
+.scurissima-nera {
+    background-color: #514845;
+}

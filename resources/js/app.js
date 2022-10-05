@@ -2,7 +2,9 @@
 import {
     LoadMoreProducts
 } from './modules'
+import Login from './Auth/Login';
 
-(function(){
-    new LoadMoreProducts
+(function () {
+    new LoadMoreProducts;
+    new Login;
 })();

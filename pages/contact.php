@@ -1,3 +1,8 @@
+<?php
+/**
+ * Template Name: Contact
+ */
+?>
 <style>
 <?php include 'app.css'; ?>
 </style>
@@ -11,12 +16,12 @@
     $siteKey = '6LfUXRgiAAAAAN-eBt4lGrMO8UqwyPmNQqaYccbP';
     $secretKey = '6LfUXRgiAAAAAL_817HWxnImWorwb0rCkgY5vBIJ'; ?>
 
-<div  id="my_form" class="bg-contact">
-    <div>
+<div>
+    <div  id="my_form" class="bg-contact ">
         <div id="main-text-c" class="2xl:w-8/12 xl:w-8/12  lg:w-8/12 w-11/12  pt-28 mx-auto text-5xl font-normal leading-10 main-text-contact">
             Contattaci
         </div>
-        <div class="pb-28 mx-auto w-fit ">
+        <div class="pb-28 mx-auto  w-fit ">
             <form action="#" class="mb-auto w-max pl-4 pr-8" id="contact_form" action="/action_page.php">
                 <div id="main-text-con" class="pb-4 pt-28 mx-auto text-5xl font-normal leading-10 main-text-contact">
                     Contattaci
