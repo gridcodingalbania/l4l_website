@@ -1,8 +1,8 @@
 
 import {
-    Test
+    LoadMoreProducts
 } from './modules'
 
 (function(){
-    new Test
+    new LoadMoreProducts
 })();

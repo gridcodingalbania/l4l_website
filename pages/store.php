@@ -7,43 +7,10 @@
 <div class="store w-full bg-black py-20">
     <h1 class="text-[48px] pl-8 pb-10" style="color:#E84246;">Store</h1>
     <div class="px-10">
-        <?php 
-        $args = [
-            'post_type' => 'product',
-            'posts_per_page' => 12
-        ];
-        $posts = get_posts($args); ?>
-        <?php if($posts) : ?>
-            <div class="flex lg:mb-4 flex-wrap md:mb-2 sm:mb-2  items-center">
-                <?php foreach($posts as $post) : ?>
-                    <?php $product = App\Model\Product::toCard($post->ID); ?>
-                    <div class=" lg:w-1/4 md:w-1/2 sm:w-1/2 py-8 content-center">
-                            <a   href="<?php echo $product['link']; ?>">
-                                <div >
-                                    <img  class="m-auto" src="<?php echo $product['image']; ?>">
-                                    <div class="px-6 py-4 text-center">
-                                        <div class="font-bold text-white text-20 mb-2"><?php echo $product['name']; ?></div>
-                                        <p class="text-white text-base px-10">
-                                            <?php echo $product['short_description']; ?>
-                                        </p>
-                                    </div> 
-                                </div>
-                            </a>
-                            <!-- Wishlist Cart Section -->
-                            <div class="flex justify-center space-x-4">
-                
-                                    <a href="<?php echo $productt['add_to_cart_url']; ?>"><img src="<?php echo get_image('wishlist.svg');?>"></a>
-                    
-                                    <a href="<?php echo $productt['add_to_cart_url']; ?>"> <img src="<?php echo get_image('carticon.svg');?>"></a>
-                                
-                            </div>
-                    </div>
-                <?php endforeach; ?>
-            </div>
-        <?php endif; ?>
+        <div class="js-product-list flex lg:mb-4 flex-wrap md:mb-2 sm:mb-2  items-center"></div>
         <!-- Button Section -->
         <div class="button-section w-full text-center py-10 pt-20 ">
-            <button class="bg-white text-black font-semibold  py-2 px-4 border rounded">
+            <button load-more data-offset="0" class="bg-white text-black font-semibold  py-2 px-4 border rounded">
                  View More
             </button>
         </div>
