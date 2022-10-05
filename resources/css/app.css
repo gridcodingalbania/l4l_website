@@ -2,8 +2,54 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url(./login.css);
+/* DM SERIF DISPLAY FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
+/* Arimo */
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+.family-DM{
+    font-family: 'DM Serif Display';
+}
+.family-Arimo{
+    font-family: 'Arimo';
+}
+
+footer {
+    font-family: Arimo;
+    background-color: #F8F2EF;
+}
+
+#th {
+    line-height: 21px;
+    font-weight: 400;
+    color: #707070;
+}
+
+.footer-element {
+    padding-left: 22.57%;
+    padding-right: 22.5%;
+}
+
+@media only screen and (max-width: 750px) {
+    .footer-element {
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-bottom: 5%;
+        padding-top: 21px;
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .footer-element {
+        width: fit-content;
+    }
+}
 @import url(./footer.css);
 @import url(./contact.css);
 @import url(./discovery.css);
+@import url(./preferences.css);
 
 
