@@ -38,7 +38,7 @@
                         <span class="cursor-pointer">Note Legali</span>
                         </div>
                         <div>
-                            <button onclick="toggleText(1)">
+                            <button onclick="toggleTextFooter(1)">
                                 <svg id="plus-icon1" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M10 5C10 5.30683 9.75127 5.55556 9.44444 5.55556H5.63492V9.36508C5.63492 9.71574 5.35066 10 5 10C4.64934 10 4.36508 9.71574 4.36508 9.36508V5.55556H0.555555C0.248731 5.55556 0 5.30683 0 5C0 4.69318 0.248731 4.44444 0.555555 4.44444H4.36508V0.634921C4.36508 0.284264 4.64934 0 5 0C5.35066 0 5.63492 0.284264 5.63492 0.634921V4.44444H9.44445C9.75127 4.44444 10 4.69318 10 5Z" fill="#707070"/>
                                 </svg>
@@ -48,7 +48,7 @@
                             </button>
                         </div>
                     </div>
-                    <div id="toggle-text1"  class="hidden mt-3 whitespace-pre-wrap w-4/5 2xl:w-4/5 xl:w-4/5 lg:w-4/5 md:w-4/5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem morbi non nunc, pellentesque nec. Vitae orci, in adipiscing sed integer est. Sed duis habitant mauris sit risus neque ut ut. Eget risus lectus venenatis facilisis Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem morbi non nunc, pellentesque nec.
+                    <div id="toggle-textFooter1"  class="hidden mt-3 whitespace-pre-wrap w-4/5 2xl:w-4/5 xl:w-4/5 lg:w-4/5 md:w-4/5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem morbi non nunc, pellentesque nec. Vitae orci, in adipiscing sed integer est. Sed duis habitant mauris sit risus neque ut ut. Eget risus lectus venenatis facilisis Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem morbi non nunc, pellentesque nec.
                     </div>
                     
                 </th>
@@ -60,7 +60,7 @@
                         <span class="cursor-pointer">Impressum</span>
                         </div>
                         <div>
-                            <button class="align-right" onclick="toggleText(2)">
+                            <button class="align-right" onclick="toggleTextFooter(2)">
                                 <svg id="plus-icon2" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M10 5C10 5.30683 9.75127 5.55556 9.44444 5.55556H5.63492V9.36508C5.63492 9.71574 5.35066 10 5 10C4.64934 10 4.36508 9.71574 4.36508 9.36508V5.55556H0.555555C0.248731 5.55556 0 5.30683 0 5C0 4.69318 0.248731 4.44444 0.555555 4.44444H4.36508V0.634921C4.36508 0.284264 4.64934 0 5 0C5.35066 0 5.63492 0.284264 5.63492 0.634921V4.44444H9.44445C9.75127 4.44444 10 4.69318 10 5Z" fill="#707070"/>
                                 </svg>
@@ -70,7 +70,7 @@
                             </button>
                         </div>
                     </div>
-                    <div id="toggle-text2"  class="hidden mt-3 whitespace-pre-wrap w-4/5 2xl:w-4/5 xl:w-4/5 lg:w-4/5 md:w-4/5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem morbi non nunc, pellentesque nec. Vitae orci, in adipiscing sed integer est. Sed duis habitant mauris sit risus neque ut ut. Eget risus lectus venenatis facilisis Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem morbi non nunc, pellentesque nec.
+                    <div id="toggle-textFooter2"  class="hidden mt-3 whitespace-pre-wrap w-4/5 2xl:w-4/5 xl:w-4/5 lg:w-4/5 md:w-4/5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem morbi non nunc, pellentesque nec. Vitae orci, in adipiscing sed integer est. Sed duis habitant mauris sit risus neque ut ut. Eget risus lectus venenatis facilisis Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem morbi non nunc, pellentesque nec.
                     </div>
                     
                 </th>
@@ -126,8 +126,8 @@
 </div>
 </footer>
 <script>
-function toggleText(num) {
-  var text = document.getElementById("toggle-text" + num);
+function toggleTextFooter(num) {
+  var text = document.getElementById("toggle-textFooter" + num);
   var plus = document.getElementById("plus-icon" + num);
   var minus = document.getElementById("minus-icon" + num);
   if (text.style.display === "none") {
