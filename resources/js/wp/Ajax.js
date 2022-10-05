@@ -1,7 +1,7 @@
 import qs from 'qs'
 import axios, { AxiosRequestConfig } from 'axios'
 // window.INITIAL_DATA = {"ajax_url":"http:\/\/nmc-theme.test\/wp-admin\/admin-ajax.php","foo":"bra"};
-const BASE_URL = window.INITIAL_DATA.ajax_url;
+const BASE_URL = window.APP_DATA.ajax_url;
 
 class Ajax {
 

@@ -1,10 +1,10 @@
 
 import {
-    Test
+    LoadMoreProducts
 } from './modules'
 import Login from './Auth/Login';
 
 (function () {
-    new Test;
+    new LoadMoreProducts;
     new Login;
 })();
