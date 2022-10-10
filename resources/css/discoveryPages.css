@@ -4,15 +4,13 @@
 .fDSD{
     font-family: 'DM Serif Display';
 } 
-
-
 .scene {
   margin: 40px 0;
   position: relative;
   width: 210px;
   height: 140px;
   margin: 40px auto;
-  perspective: 1000px;
+  perspective: 300px;
 }
 
 .carousel {
@@ -28,7 +26,6 @@
   position: absolute;
   width: 190px;
   height: 120px;
-  left: 10px;
   top: 10px;
   line-height: 116px;
   font-size: 80px;
@@ -42,7 +39,7 @@
   width: 210px;
   height: 140px;
   margin: 40px auto;
-  perspective: 1000px;
+  perspective: 400px;
 }
 
 .carousel2 {
@@ -68,10 +65,6 @@
 }
 * { box-sizing: border-box; }
 
-body {
-  font-family: sans-serif;
-  text-align: center;
-}
 .carousel__cell:nth-child(1) { transform: rotateY(  0deg) translateZ(288px); }
 .carousel__cell:nth-child(2) { transform: rotateY( 40deg) translateZ(288px); }
 .carousel__cell:nth-child(3) { transform: rotateY( 80deg) translateZ(288px); }
@@ -90,53 +83,11 @@ body {
 .carousel__cell2:nth-child(7) { transform: rotateY(240deg) translateZ(288px); }
 .carousel__cell2:nth-child(8) { transform: rotateY(280deg) translateZ(288px); }
 .carousel__cell2:nth-child(9) { transform: rotateY(320deg) translateZ(288px); }
-/* carousel */
-/* #drag-container, #spin-container {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: auto;
-    -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d;
+#scrollbar::-webkit-scrollbar {
+  display: none;
+}
+@media only screen and (max-width: 640px){
+  .scene {
+    width: auto;
   }
-  
-  #drag-container img, #drag-container video {
-    -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    line-height: 200px;
-    font-size: 50px;
-    text-align: center;
-    -webkit-box-shadow: 0 0 8px #fff;
-            box-shadow: 0 0 8px #fff; 
-  }
-  
-  #drag-container img:hover, #drag-container video:hover {
-    -webkit-box-shadow: 0 0 15px #fffd;
-            box-shadow: 0 0 15px #fffd; 
-  }
-  
-  #drag-container p {
-    font-family: Serif;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    color: #fff;
-  }
-  
-  #ground {
-    position: absolute;
-  }
-  
-  #music-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  
-  */
+}
